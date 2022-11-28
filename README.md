@@ -34,7 +34,7 @@
 1. Set up your Node Project with `node init`
 
 2. Load this library into your project \
-`const googlesheetdatabase = require("./GoogleSheetDatabase")`
+`const googlesheetdatabase = require("google-sheet-database")`
 
 3. Create a schema for a new table \
 `SampleSchema = new googlesheetdatabase.schema(
@@ -50,7 +50,7 @@
     apiKey: YOUR_DEPLOYMENT_ID
 })`
 
-### Performing CRUD Operations
+### [Performing CRUD Operations](./test/main.js)
 #### Inserting a single record (CREATE)
 #### Update a single record (UPDATE)
 #### Select a single record (READ)
