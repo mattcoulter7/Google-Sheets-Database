@@ -1,3 +1,6 @@
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') })
+
 const googlesheetdatabase = require("./GoogleSheetDatabase")
 
 // Creating a schema
@@ -10,8 +13,8 @@ SampleModel = new googlesheetdatabase.model("SampleModel", SampleSchema)
 
 // Connecting to the Database
 googlesheetdatabase.connection.connect({
-    databaseName: "SampleDatabase",
-    apiKey: "AKfycbxM-kHTBP19gMZQadEnvP2_dsGzwv3YjGTJhUXsmxcORnbIxJvGsoVztpAW6T9QSiHRJg"
+    databaseName: process.env.databaseName,
+    apiKey: process.env.apiKey
 })
 
 //---------------- CRUD OPERATIONS ----------------//
