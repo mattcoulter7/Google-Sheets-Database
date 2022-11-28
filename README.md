@@ -5,7 +5,7 @@ This NPM Package allows you to use a Google Spreadsheet as a database within you
 There are 2 setup parts in order to get this package working. The first part is setting up the API endpoint that calls routes to my script endpoint within a Google Script on your Google Drive. The second part is installing the NPM package and connecting to your the database via the deployment ID.
 
 
-### Google
+### Part 1: Google
 1. Create a new google script file \
 ![image](https://user-images.githubusercontent.com/53892067/204195998-9b9f3ef1-f8f8-4703-ae52-e43cb0316ee5.png)
 
@@ -33,7 +33,7 @@ There are 2 setup parts in order to get this package working. The first part is 
 6. Copy the Deployment ID to your clipboard
 ![image](https://user-images.githubusercontent.com/53892067/204198806-abed432f-89f6-4a32-86cb-dd21e15138c0.png)
 
-### Node
+### Part 2: Node
 1. Set up your Node Project with `node init`
 
 2. Load this library into your project \
@@ -53,12 +53,19 @@ There are 2 setup parts in order to get this package working. The first part is 
     apiKey: YOUR_DEPLOYMENT_ID
 })`
 
-### [Performing CRUD Operations](./test/main.js)
-#### Inserting a single record (CREATE)
-#### Update a single record (UPDATE)
-#### Select a single record (READ)
-#### Deleting a single record (DELETE)
-#### Inserting Multiple Records (CREATE)
-#### Update multiple records (UPDATE)
-#### Select (READ)
-#### Select with where condition (READ)
+#### Performing CRUD Operations
+WIthin [this file](./test/main.js) you will see examples of all the different CRUD operations that can be performed. Below lists them for reference.
+- Inserting a single record (CREATE)
+- Update a single record (UPDATE)
+- Select a single record (READ)
+- Deleting a single record (DELETE)
+- Inserting Multiple Records (CREATE)
+- Update multiple records (UPDATE)
+- Select (READ)
+- Select with where condition (READ) \
+![image](https://user-images.githubusercontent.com/53892067/204204413-5d0ab1b2-8b91-477e-a153-86165c7a3c94.png)
+
+
+#### Viewing the spreadsheet
+![image](https://user-images.githubusercontent.com/53892067/204204319-a7c365bb-9d6d-4fc3-9195-e75f2de7af55.png)
+
