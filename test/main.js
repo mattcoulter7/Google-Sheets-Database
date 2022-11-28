@@ -1,7 +1,7 @@
 const path = require('path')
 require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 
-const googlesheetdatabase = require("./GoogleSheetDatabase")
+const googlesheetdatabase = require("google-sheet-database")
 
 // Creating a schema
 SampleSchema = new googlesheetdatabase.schema(
