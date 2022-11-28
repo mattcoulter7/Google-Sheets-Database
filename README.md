@@ -1,6 +1,9 @@
 # Google-Sheets-Database
+This NPM Package allows you to use a Google Spreadsheet as a database within your Node Js project.
 
 ## How to use
+There are 2 setup parts in order to get this package working. The first part is setting up the API endpoint that calls routes to my script endpoint within a Google Script on your Google Drive. The second part is installing the NPM package and connecting to your the database via the deployment ID.
+
 
 ### Google
 1. Create a new google script file \
